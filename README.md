@@ -7,7 +7,7 @@ PoC for the paper "SoK: A Unified Data Model for Smart Contract Vulnerability Ta
 ## Contributing
 
 1. Fork this repository
-2. Edit the json database at `./src/data/out-v0.9.json` and eventually the json schema at `./schema.json`
+2. Edit the json database at `./src/data/out.json` and eventually the json schema at `./schema.json`
 3. Create a pull request
 
 ## GitHub Actions
