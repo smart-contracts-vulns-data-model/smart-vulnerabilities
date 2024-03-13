@@ -1,6 +1,6 @@
 export function getLevelImage (id) {
-  if (id === 'lev-5f83c743-ffd6-4f5c-ad9e-6b2e0b40b0a2') return 'ethereum.svg'
-  if (id === 'lev-089d8d52-05bb-47c9-9e1c-c882741f4ef1') return 'evm.svg'
-  if (id === 'lev-af97cd38-7678-4fbe-8792-5edf5325bcef') return 'solidity.svg'
+  if (id === 'lev-59081513-7552-464d-80d5-26a5e99f25de') return 'ethereum.svg'
+  if (id === 'lev-2ac66a08-b4df-475e-aaed-ee3dd5568db6') return 'evm.svg'
+  if (id === 'lev-f91cba5f-2273-4f0e-9833-88837df9c5cc') return 'solidity.svg'
   return 'no-image.svg'
 }

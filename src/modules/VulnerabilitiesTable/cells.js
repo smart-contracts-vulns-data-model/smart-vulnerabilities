@@ -41,7 +41,7 @@ export function AxisBottom ({ dms, scale }) {
     <g transform={`translate(0, ${dms.boundedHeight})`}>
       {scale.domain().map(t => (
         <text key={t} transform={`translate(${scale(t) + scale.bandwidth() / 2}, 15)`} className='text-xs fill-slate-600' style={{ textAnchor: 'middle' }}>
-          {t.toString().slice(2)}
+          {`'${t.toString().slice(2)}`}
         </text>
       ))}
     </g>
@@ -82,7 +82,7 @@ export function TimeViewCell ({ value }) {
       .paddingInner(0.15)
   ), [dms.height])
   return (
-    <div ref={ref} className='w-64 h-20 my-1'>
+    <div ref={ref} className='h-20 my-1 w-52'>
       <svg width={dms.width} height={dms.height}>
         <AxisBottom dms={dms} scale={xScale} />
         <g transform={`translate(${[

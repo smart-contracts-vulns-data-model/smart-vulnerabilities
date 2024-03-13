@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 import { getLevelImage } from '@/utils'
 import TableHeadSort from '@/components/TableHeadSort'
-import { accessorCategories, accessorLevel, accessorMitigations, accessorTimeView, accessorVulnerability } from './accessors'
+import { accessorCategories, accessorCwes, accessorLevel, accessorMitigations, accessorSwcs, accessorTimeView, accessorVulnerability } from './accessors'
 import { ImageCell, MultilineCell, TimeViewCell, TimeViewHeader } from './cells'
 
 const columnHelper = createColumnHelper()
@@ -22,6 +22,16 @@ const columns = [
   columnHelper.accessor(accessorCategories, {
     id: 'categories',
     header: 'Categories',
+    cell: v => <MultilineCell value={v.getValue()} />
+  }),
+  columnHelper.accessor(accessorCwes, {
+    id: 'cwes',
+    header: _ => <div className='w-20 text-start'>CWEs</div>,
+    cell: v => <MultilineCell value={v.getValue()} />
+  }),
+  columnHelper.accessor(accessorSwcs, {
+    id: 'swcs',
+    header: <div className='w-20 text-start'>SWCs</div>,
     cell: v => <MultilineCell value={v.getValue()} />
   }),
   columnHelper.accessor(accessorMitigations, {
