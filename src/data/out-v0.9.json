@@ -1,7 +1,6 @@
 {
     "vulnerabilities": [
         {
-            "id": "vul-294df700-0df0-4072-ae0d-f89d18bcf52e",
             "name": "51% Vulnerability",
             "description": "The \"51% vulnerability\" refers to a scenario in blockchain networks, particularly in proof-of-work consensus mechanisms, where an entity or group controls more than 50% of the network's mining power. This control enables them to potentially manipulate transactions, reverse transactions, or execute double-spending attacks, undermining the integrity and security of the network.",
             "sample_code": "",
